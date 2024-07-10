@@ -1,0 +1,85 @@
+:root {
+    --color-primario: #000000;
+    --color-secundario: #F6F6F6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+    --color-blanco: #FFFFFF;
+    --color-boton-encriptar: #0056b3;
+    --color-boton-desencriptar: #6c757d;
+
+    --fuente-krona: 'Krona One', sans-serif;
+    --fuente-montserrat: 'Montserrat', sans-serif;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-secundario);
+    margin: 0;
+}
+
+.header{
+    padding: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-color: 2px #000000;
+}
+
+.titulo__header{
+    font-size: 2rem;
+    font-family: var(--fuente-krona);
+}
+
+.logo{
+    padding: 0px 5px;
+    width: auto;
+    height: 7rem;
+}
+
+.entrada-texto {
+    width: 500px; /* Ancho fijo para el textarea */
+    height: 37.5rem; /* Altura fija para el textarea */
+    padding: 10px ;
+    font-family: var(--fuente-montserrat);
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+.contenido{
+    padding-left: 18rem ;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    gap: 40px;
+}
+
+.btn-encriptar {
+    padding: 1% 2%;
+    background-color: var(--color-boton-encriptar);
+    color: var(--color-blanco);
+    font-size: 1rem;
+    font-family: var(--fuente-montserrat);
+    border-radius: 5%;
+}
+
+.btn-desencriptar {
+    padding: 1%;
+    background-color: var(--color-boton-desencriptar);
+    color: var(--color-blanco);
+    font-size: 1rem;
+    font-family: var(--fuente-krona);
+}
+
+.footer-text{
+    font-family: var(--fuente-montserrat);
+    padding: 2rem;
+    color: var(--color-blanco);
+    background-color: var(--color-hover);
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
